@@ -100,7 +100,10 @@ We used [this Trello board](https://trello.com/b/eroCMlow/mezcalcoholics) to man
 -   Only suggest the ingredients that pair with the appropriate liquor, instead of all ingredients
 -   Create an Account navigation link, with a drop down for "Account Details" and "Favorites"
 -   Redirect user home after registering, instead of logging in
--   Register/Log in errors - none are thrown, the user has no idea what is happenign
+-   Register/Log in errors - none are thrown, the user has no idea what is happening
 -   Use React Contexts to avoid explicitly passing props down
 -   Update "Load More" button to use modal
 -   Random drink button
+
+### Credits
+ - Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>

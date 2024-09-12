@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal'
 import { Button } from "../Button";
 
-export const FavModal = () => {
-    const [show, setShow] = useState(false);
+export const FavModal = (props) => {
+    const [showModal, setShowModal] = useState(false);
 
     return (
         <>
-            <Button onClick={() => setShow(true)}>
+            {/* <Button onClick={() => setShowModal(true)}>
                 Custom Width Modal
-            </Button>
+            </Button> */}
 
             <Modal
-                show={show}
-                onHide={() => setShow(false)}
+                showModal={showModal}
+                onHide={() => setShowModal(false)}
                 dialogClassName="modal-50w"
                 aria-labelledby="example-custom-modal-styling-title"
             >

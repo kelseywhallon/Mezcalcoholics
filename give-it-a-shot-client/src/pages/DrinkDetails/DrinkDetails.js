@@ -8,12 +8,6 @@ import { Button } from "../../components/Button";
 
 
 export const DrinkDetails = props => {
-    // const backListener = props.history.listen((location, action) => {
-    //     if (action === "POP") {
-    //         console.log("back back to results");
-    //     }
-    // });
-
     const [idDrink, setIdDrink] = useState("");
     const [drink, setDrinkDetails] = useState({});
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Results.module.scss";
 import { Option } from "../Option";
 import { Button } from "../Button";
@@ -7,6 +7,8 @@ import { FavModal } from '../Modal/FavModal';
 
 export function Results(props) {
   const options = props;
+
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
@@ -21,6 +23,7 @@ export function Results(props) {
               image={drink.strDrinkThumb}
               action={"/drink/" + drink.idDrink}
             />
+            <FavModal showModal={showModal} setShowModal={showModal}/>
             <Button
               small={true}
               className={styles.favoriteButton}
@@ -32,11 +35,13 @@ export function Results(props) {
                   imageUrl: drink.strDrinkThumb
                 };
 
+                setShowModal(!showModal);
+
                 UsersApi.favorite(props.currentUser, favorite).then(
                   data => console.log(data)
-
-                  //TODO: add modal here to say the favorite was added, so the user knows
+                  //TODO: add modal here to say the favorite was added, so the user 
                 );
+                  
               }}
               content="Add to Favorites"
             />
